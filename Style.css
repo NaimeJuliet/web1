@@ -1,0 +1,15 @@
+.fuente{
+    font-family: 'Courgette', cursive;
+}
+
+.fondo{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(214,27,52,0.7175245098039216) 35%, rgba(0,212,255,1) 100%);
+}
+
+.fondobanner{
+    background-image: url("img/hdmickey.png");
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: top center;
+}
