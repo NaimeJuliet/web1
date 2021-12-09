@@ -9,7 +9,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(214,27,52,0.717524509
 
 .fondobanner{
     background-image: url("img/hdmickey.png");
-    height: 600px; 
+    height: 200px; 
     background-attachment: fixed;
     background-position: top center;
 }
