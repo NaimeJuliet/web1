@@ -58,6 +58,9 @@ let tarjeta=document.createElement("div")
     precio.classList.add("text-info")    
     precio.textContent="$"+produto.precio
 
+    //let descripcion=document.createElement("h7")
+    //descripcion.classList.add("text-center")
+
     let botonAmpliarInfo=document.createElement("button")
     botonAmpliarInfo.setAttribute("type","button")
     botonAmpliarInfo.classList.add("btn")
@@ -65,6 +68,8 @@ let tarjeta=document.createElement("div")
     botonAmpliarInfo.classList.add("mx-3")
     botonAmpliarInfo.classList.add("mb-3")    
     botonAmpliarInfo.textContent=("ver producto")
+
+ 
    
   
     
@@ -80,6 +85,7 @@ let tarjeta=document.createElement("div")
     tarjeta.appendChild(imagen)
     //tarjeta.appendChild(separador)  
     tarjeta.appendChild(precio)
+ 
     tarjeta.appendChild(botonAmpliarInfo)
     
       
