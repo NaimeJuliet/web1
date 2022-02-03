@@ -26,7 +26,8 @@
 
                 <ul class="navbar-nav mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"> <i class="fas fa-gift "></i>
+                    <a class="nav-link active" aria-current="page" href="#" id="botonCarrito">
+                       <i class="fas fa-gift "></i>
                       <i class="fas fa-cart-arrow-down fa-2x"></i>
                       <span id="pildora" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-success invisible">
                         99+
@@ -55,8 +56,8 @@
       <div class="modal fade" id="modalinfoproducto">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header bg-secondary">
-              <h5 class="modal-title text-info">Tienda de Disney</h5>
+            <div class="modal-header bg-success">
+              <h5 class="modal-title text-warning">Tienda de Disney</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
@@ -83,11 +84,36 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" id="botonAgregarProducto">Añadir al carrito</button>
+              <button type="button" class="btn btn-success" id="botonAgregarProducto">Añadir al carrito</button>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section>
+      <!-- Modal -->
+          <div class="modal fade" id="modalVerCarrito">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-success">
+                  <h5 class="modal-title text-warning ">Tienda Mickey Mouse</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container" id="contenedorCarrito">
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-info">Limpiar Carrito</button>
+                  <button type="button" class="btn btn-success">Comprar</button>
+                  <button type="button" class="btn btn-warning">Valor en Dolares</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <footer>

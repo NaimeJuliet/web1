@@ -2,6 +2,7 @@
 import {llenartienda} from "./llenartienda.js"
 import {AmpliarInfoProducto}from "./ampliarInfoProducto.js"
 import {agregarCarrito}from "./agregarAlCarrito.js"
+import {verCarrito}from "./verCarrito.js"
 
 //variables globales de la tienda
 let producto={}
@@ -32,16 +33,16 @@ listaProductos.addEventListener("click", function(event){
 
          //agrego el producto al carrito
         carrito.push(producto)
-        
-
         //Oculto la modal de info producto
         modalinfoproducto.hide()  
-
         //llamar la funcion agregarCarrito
         agregarCarrito(carrito)
 
-
-
-        
-
     })
+    //llamo a la funcion verCarrito
+    let botonVerCarrito=document.getElementById("botonCarrito")
+    botonVerCarrito.addEventListener("click", function(){
+      verCarrito(carrito)
+    })
+
+
