@@ -21,6 +21,9 @@ export function AmpliarInfoProducto(event){
     let etiquetaImagenProducto=document.getElementById("imagenProducto")
     etiquetaImagenProducto.src=producto.foto
 
+    /*let etiquetaPrecioProducto=document.getElementById("precioProducto")
+    etiquetaPrecioProducto.textContent=producto.precio*/
+
     return (producto)
 
     }

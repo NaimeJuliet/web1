@@ -61,10 +61,15 @@ let tarjeta=document.createElement("div")
     let precio=document.createElement("h5")
     precio.classList.add("text-center")
     precio.classList.add("text-info")    
-    precio.textContent="$"+produto.precio
+    precio.textContent=+produto.precio
 
-    //let descripcion=document.createElement("h7")
-    //descripcion.classList.add("text-center")
+    /*let descripcion=document.createElement("h7")
+    descripcion.classList.add("text-center")
+    descripcion.classList.add("text-danger")
+    descripcion.classList.add("fw-bold")
+    descripcion.classList.add("text-center")
+    descripcion.classList.add("mx-3")
+    descripcion.textContent=produto.descripcion*/
 
     let botonAmpliarInfo=document.createElement("button")
     botonAmpliarInfo.setAttribute("type","button")
@@ -80,6 +85,7 @@ let tarjeta=document.createElement("div")
     tarjeta.appendChild(imagen)
     tarjeta.appendChild(separador)
     tarjeta.appendChild(nombre)
+    /*tarjeta.appendChild(descripcion)*/
     tarjeta.appendChild(precio)
     tarjeta.appendChild(botonAmpliarInfo)
     
