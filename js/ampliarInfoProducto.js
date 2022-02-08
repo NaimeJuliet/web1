@@ -8,6 +8,7 @@ export function AmpliarInfoProducto(event){
         foto:event.target.parentElement.querySelector("img").src, 
         nombre:event.target.parentElement.querySelector("h2").textContent,
         precio:event.target.parentElement.querySelector("h5").textContent,
+        descripcion:event.target.parentElement.querySelector("h7").textContent,
         
     }
 
@@ -21,8 +22,10 @@ export function AmpliarInfoProducto(event){
     let etiquetaImagenProducto=document.getElementById("imagenProducto")
     etiquetaImagenProducto.src=producto.foto
 
-    /*let etiquetaPrecioProducto=document.getElementById("precioProducto")
-    etiquetaPrecioProducto.textContent=producto.precio*/
+    let etiquetadescripcionProducto=document.getElementById("descripcionProducto")
+    etiquetadescripcionProducto.textContent=producto.descripcion
+
+    
 
     return (producto)
 

@@ -5,16 +5,16 @@ export function llenartienda(){
 
     let productos=[
 
-        {nombre:"Cartuchera", precio: 50000, foto:"../img/cartuchera.jpg" , descripcion:"cartuchera para guardar tus objetos personales"},
-        {nombre:"Camara", precio: 150000, foto:"../img/camara.jpg" , descripcion:"hermosa camara con modelo de mickey antiguo"},
-        {nombre:"Camara minnie", precio: 150000, foto:"../img/camara2.jpg" , descripcion:"hermosa y comoda camara de minnie mouse"},
-        {nombre:"Collar minnie", precio: 90000, foto:"../img/collar_minnie.jpg" , descripcion:"collar minie para todas las edades"},
-        {nombre:"Cortauñas", precio: 25000, foto:"../img/cortauñas.jpg" , descripcion:"un cortauñas hermoso, delicado para todas las edades"},
-        {nombre:"Morral", precio: 120000, foto:"../img/morral.jpg" , descripcion:"comodo morral para llevar todo lo que quieras"},
-        {nombre:"Muñeco", precio: 75000, foto:"../img/muñeco.jpg" , descripcion:"peluche para los mas peques"},
-        {nombre:"Taza", precio: 50000, foto:"../img/taza.jpg" , descripcion:"preciosa taza para beber tus mejores momentos"},
-        {nombre:"Vaso", precio: 12000, foto:"../img/vaso.jpg" , descripcion:"comoda y hermosa taza con calentador para que tus bebidas siempre esten calientes"},
-        {nombre:"Cosmetiquera", precio: 65000, foto:"../img/cosmetiquera.jpg" , descripcion:"guarda todos tus comesticos en una hermosa cosmetiquera"},
+        {nombre:"Cartuchera", precio: 50000, foto:"../img/cartuchera.jpg" , descripcion:"Cartuchera para guardar tus objetos personales"},
+        {nombre:"Camara", precio: 150000, foto:"../img/camara.jpg" , descripcion:"Hermosa camara con modelo de mickey antiguo"},
+        {nombre:"Camara minnie", precio: 150000, foto:"../img/camara2.jpg" , descripcion:"Hermosa y comoda camara de minnie mouse"},
+        {nombre:"Collar minnie", precio: 90000, foto:"../img/collar_minnie.jpg" , descripcion:"Collar minie para todas las edades"},
+        {nombre:"Cortauñas", precio: 25000, foto:"../img/cortauñas.jpg" , descripcion:"Un cortauñas hermoso, delicado para todas las edades"},
+        {nombre:"Morral", precio: 120000, foto:"../img/morral.jpg" , descripcion:"Comodo morral para llevar todo lo que quieras"},
+        {nombre:"Muñeco", precio: 75000, foto:"../img/muñeco.jpg" , descripcion:"Peluche para los mas peques"},
+        {nombre:"Taza", precio: 50000, foto:"../img/taza.jpg" , descripcion:"Preciosa taza para beber tus mejores momentos"},
+        {nombre:"Vaso", precio: 12000, foto:"../img/vaso.jpg" , descripcion:"Comoda y hermosa taza con calentador para que tus bebidas siempre esten calientes"},
+        {nombre:"Cosmetiquera", precio: 65000, foto:"../img/cosmetiquera.jpg" , descripcion:"Guarda todos tus comesticos en una hermosa cosmetiquera"},
     ] 
 
     
@@ -63,13 +63,10 @@ let tarjeta=document.createElement("div")
     precio.classList.add("text-info")    
     precio.textContent=+produto.precio
 
-    /*let descripcion=document.createElement("h7")
-    descripcion.classList.add("text-center")
-    descripcion.classList.add("text-danger")
-    descripcion.classList.add("fw-bold")
-    descripcion.classList.add("text-center")
+    let descripcion=document.createElement("h7")
     descripcion.classList.add("mx-3")
-    descripcion.textContent=produto.descripcion*/
+    descripcion.classList.add("invisible")
+    descripcion.textContent=produto.descripcion
 
     let botonAmpliarInfo=document.createElement("button")
     botonAmpliarInfo.setAttribute("type","button")
@@ -85,7 +82,7 @@ let tarjeta=document.createElement("div")
     tarjeta.appendChild(imagen)
     tarjeta.appendChild(separador)
     tarjeta.appendChild(nombre)
-    /*tarjeta.appendChild(descripcion)*/
+    tarjeta.appendChild(descripcion)
     tarjeta.appendChild(precio)
     tarjeta.appendChild(botonAmpliarInfo)
     

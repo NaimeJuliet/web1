@@ -19,6 +19,7 @@ let listaProductos=document.getElementById("fila")
 listaProductos.addEventListener("click", function(event){
 
         producto=AmpliarInfoProducto(event)
+        /*if()*/
         modalinfoproducto.show()
 
     })
@@ -29,7 +30,8 @@ listaProductos.addEventListener("click", function(event){
 
         let cantidadProducto=document.getElementById("cantidadProducto").value
         producto.cantidad=cantidadProducto
-        
+
+               
 
          //agrego el producto al carrito
         carrito.push(producto)
