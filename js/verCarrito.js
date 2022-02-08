@@ -21,21 +21,28 @@
         fotoProducto.classList.add("w-100")
         fotoProducto.src=producto.foto
 
+        let nombreProducto=document.createElement("h5")
+        nombreProducto.textContent=producto.nombre
 
-        //padres e hijos
+        let precioProducto=document.createElement("h6")
+        precioProducto.textContent="$"+producto.precio
+
+        let cantidadProducto=document.createElement("h6")
+        cantidadProducto.textContent=producto.cantidad+" Und"
+
+
+        //padres e hijos 
         columna1.appendChild(fotoProducto)
-        
+
+        columna2.appendChild(nombreProducto)
+        columna2.appendChild(precioProducto)
+        columna2.appendChild(cantidadProducto)
+
         fila.appendChild(columna1)
         fila.appendChild(columna2)
-       
 
         contenedor.appendChild(fila)
 
     })
-
-
-
-
-
     modalVerCarrito.show()
 }

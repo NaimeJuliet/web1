@@ -46,6 +46,11 @@ let tarjeta=document.createElement("div")
     imagen.classList.add("h-100")
     imagen.src=produto.foto
 
+    let separador=document.createElement("hr")
+    separador.classList.add("w-50")
+    separador.classList.add("mx-auto")
+    separador.classList.add("d-block")
+
     let nombre=document.createElement("h2")
     nombre.classList.add("text-danger")
     nombre.classList.add("fw-bold")
@@ -69,23 +74,13 @@ let tarjeta=document.createElement("div")
     botonAmpliarInfo.classList.add("mb-3")    
     botonAmpliarInfo.textContent=("ver producto")
 
- 
-   
-  
-    
-    let separador=document.createElement("hr")
-    separador.classList.add("w-60")
-    separador.classList.add("mx-auto")
-    separador.classList.add("d-block")
-    
-
 
     //vamos a anclar (poner)(disponer)las etiquetas que acabamos de crear en nuestra base
-    tarjeta.appendChild(nombre)
+   
     tarjeta.appendChild(imagen)
-    //tarjeta.appendChild(separador)  
+    tarjeta.appendChild(separador)
+    tarjeta.appendChild(nombre)
     tarjeta.appendChild(precio)
- 
     tarjeta.appendChild(botonAmpliarInfo)
     
       
